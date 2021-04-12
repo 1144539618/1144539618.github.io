@@ -323,7 +323,30 @@
 
             <div class="description center-align">
                 
-                    <span id="jinrishici-sentence">正在加载今日诗词....</span>' 
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "花开不是为了花落，而是为了开的更加灿烂",
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                                "如果放弃太早，你永远都不知道自己会错过什么",
+                            
+                                "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 100,
+                        showCursor: true
+                    });
+                </script>
                 
             </div>
         </div>
@@ -789,3 +812,29 @@ $(function () {
         document.hidden?(document.title="ヽ(●-`Д´-)ノ你不爱我了嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ你还爱我呦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
     })
 </script>
+
+<div id="weather-v2-plugin-standard"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "layout": 1,
+    "width": "450",
+    "height": "150",
+    "background": 1,
+    "dataColor": "FFFFFF",
+    "language": "zh",
+    "borderRadius": 5,
+    "key": "gFmxO91pPl"
+  }
+}
+</script>
+<script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+<script src="/js/cursor.js"></script>
+
+<script src="/js/snow.js"></script>
