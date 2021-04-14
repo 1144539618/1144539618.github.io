@@ -465,7 +465,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    288
+                    286
                 </div>
                 
 
@@ -506,37 +506,7 @@
 <blockquote>
 <p>+链表中节点数目为 n<br>+1 &lt;= n &lt;= 500<br>+-500 &lt;= Node.val &lt;= 500<br>+1 &lt;= left &lt;= right &lt;= n</p>
 </blockquote>
-<p>`class Solution {<br>public:<br>        ListNode* reverseBetween(ListNode* head, int left, int right) {</p>
-<pre><code>    ListNode* prev=new ListNode(-1);prev-&gt;next=head;//增加空头结点，简化操作，我们用的课本也是加了空头结点的。
-
-    auto a=prev;
-
-    for(int i=0;i&lt;left-1;i++) a=a-&gt;next;
-
-    auto b=a-&gt;next,c=b-&gt;next;//c保留剩下的链表，b为要操作的目前结点
-
-    for(int i=0;i&lt;right-left;i++)
-
-    {
-
-        auto d=c-&gt;next;
-
-        c-&gt;next=b;
-
-        b=c;//每次逆转之后b，c都向后移动一个结点
-
-        c=d;
-
-    }
-
-    a-&gt;next-&gt;next=c;//将整个链表重新连起来
-
-    a-&gt;next=b;
-
-    return prev-&gt;next;//注意空头结点
-
-}
-</code></pre>
+<p>`class Solution {<br>public:<br>ListNode* reverseBetween(ListNode* head, int left, int right) {<br>ListNode* prev=new ListNode(-1);prev-&gt;next=head;//增加空头结点，简化操作，我们用的课本也是加了空头结点的。<br>auto a=prev;<br>for(int i=0;i&lt;left-1;i++) a=a-&gt;next;<br>auto b=a-&gt;next,c=b-&gt;next;//c保留剩下的链表，b为要操作的目前结点<br>for(int i=0;i&lt;right-left;i++)<br>    {<br>auto d=c-&gt;next;<br>c-&gt;next=b;<br>b=c;//每次逆转之后b，c都向后移动一个结点<br>c=d;<br>    }<br>a-&gt;next-&gt;next=c;//将整个链表重新连起来<br>a-&gt;next=b;<br>return prev-&gt;next;//注意空头结点<br>    }</p>
 <p>};`</p>
 
                 
@@ -1272,7 +1242,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">582</span>&nbsp;字
+                class="white-color">580</span>&nbsp;字
             
             
             
