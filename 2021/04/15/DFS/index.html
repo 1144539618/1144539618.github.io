@@ -541,7 +541,7 @@
         for(int i=0;i<n;i++)  cout<<path[i]<<" ";
         cout<<endl;
         return;
-   }
+    }
   for(int i=1;i<=n;i++)
   {
         if(!sti[i])//当前位置没用过进行下一步，如：1_ _,之后sti[1]为ture,直接操作下一个位置。
@@ -551,7 +551,7 @@
             DFS(u+1);
             sti[i]=false;//递归回来要重新设置为false，防止回溯是数据错乱。
         }
-    }
+  }
   }
 
   int main()
