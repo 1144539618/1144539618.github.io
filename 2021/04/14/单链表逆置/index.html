@@ -471,7 +471,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-15
+                    2021-04-16
                 </div>
                 
 
@@ -526,8 +526,8 @@
 </blockquote>
 <p>代码实现：</p>
 <blockquote>
-<p>`class Solution {<br>public:<br>ListNode* reverseBetween(ListNode* head, int left, int right) {<br>ListNode* prev=new ListNode(-1);prev-&gt;next=head;//增加空头结点，简化操作，我们用的课本也是加了空头结点的。<br>auto a=prev;<br>for(int i=0;i&lt;left-1;i++) a=a-&gt;next;<br>auto b=a-&gt;next,c=b-&gt;next;//c保留剩下的链表，b为要操作的目前结点<br>for(int i=0;i&lt;right-left;i++)<br>   {<br>auto d=c-&gt;next;<br>c-&gt;next=b;<br>b=c;//每次逆转之后b，c都向后移动一个结点<br>c=d;<br>   }<br>a-&gt;next-&gt;next=c;//将整个链表重新连起来<br>a-&gt;next=b;<br>return prev-&gt;next;//注意空头结点<br>   }</p>
-<p>};`<br><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/lallaawd.jpg"></p>
+<p>class Solution {<br>public:<br>ListNode* reverseBetween(ListNode* head, int left, int right) {<br>ListNode* prev=new ListNode(-1);prev-&gt;next=head;//增加空头结点，简化操作，我们用的课本也是加了空头结点的。<br>auto a=prev;<br>for(int i=0;i&lt;left-1;i++) a=a-&gt;next;<br>auto b=a-&gt;next,c=b-&gt;next;//c保留剩下的链表，b为要操作的目前结点<br>for(int i=0;i&lt;right-left;i++)<br>   {<br>auto d=c-&gt;next;<br>c-&gt;next=b;<br>b=c;//每次逆转之后b，c都向后移动一个结点<br>c=d;<br>   }<br>a-&gt;next-&gt;next=c;//将整个链表重新连起来<br>a-&gt;next=b;<br>return prev-&gt;next;//注意空头结点<br>   }</p>
+<p>};<br><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/lallaawd.jpg"></p>
 </blockquote>
 
                 
@@ -1261,7 +1261,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">901</span>&nbsp;字
+                class="white-color">960</span>&nbsp;字
             
             
             
