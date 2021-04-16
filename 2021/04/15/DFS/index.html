@@ -529,21 +529,21 @@
 </blockquote>
 <p>代码实现：</p>
 <pre class=" language-c++"><code class="language-c++">#include <iostream>
- using namespace std;
- const int N=100;//
- bool sti[N];//储存当前位置是否被用过了
- int path[N];//储存路径
- int n;//输入的个数
- void DFS(int u)
-  {
+using namespace std;
+const int N=100;//
+bool sti[N];//储存当前位置是否被用过了
+int path[N];//储存路径
+int n;//输入的个数
+void DFS(int u)
+{
      if(u==n)//到达最后(也可以理解为树的叶节点)进行输出
     {
         for(int i=0;i<n;i++)  cout<<path[i]<<" ";
         cout<<endl;
         return;
-    }
-  for(int i=1;i<=n;i++)
-  {
+}
+for(int i=1;i<=n;i++)
+{
         if(!sti[i])//当前位置没用过进行下一步，如：1_ _,之后sti[1]为ture,直接操作下一个位置。
         {
             path[u]=i;
@@ -551,8 +551,8 @@
             DFS(u+1);
             sti[i]=false;//递归回来要重新设置为false，防止回溯是数据错乱。
         }
-  }
-  }
+}
+}
 
   int main()
   {
@@ -1294,7 +1294,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">859</span>&nbsp;字
+                class="white-color">836</span>&nbsp;字
             
             
             
