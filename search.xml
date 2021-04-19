@@ -8,7 +8,7 @@
       <link href="2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/"/>
       <url>2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<p>废话不多说先上<a href="https://www.acwing.com/problem/content/description/845/">链接</a><br>n−皇后问题是指将 n 个皇后放在 n×n 的国际象棋棋盘上，使得皇后不能相互攻击<br>到，即任意两个皇后都不能处于同一行、同一列或同一斜线上。</p>]]></content>
+        <content type="html"><![CDATA[<p>废话不多说先上<a href="https://www.acwing.com/problem/content/description/845/">链接</a><br>n−皇后问题是指将 n 个皇后放在 n×n 的国际象棋棋盘上，使得皇后不能相互攻击<br>到，即任意两个皇后都不能处于同一行、同一列或同一斜线上。</p><p>现在给定整数 n，请你输出所有的满足条件的棋子摆法。</p><p>输入格式<br>共一行，包含整数 n。</p><p>输出格式<br>每个解决方案占 n 行，每行输出一个长度为 n 的字符串，用来表示完整的棋盘状态。</p><p>其中 . 表示某一个位置的方格状态为空，Q 表示某一个位置的方格上摆着皇后。</p><p>每个方案输出完成后，输出一个空行。</p><p>注意：行末不能有多余空格。</p><p>输出方案的顺序任意，只要不重复且没有遗漏即可。</p><p>数据范围<br>1≤n≤9</p><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/20210416213615.png"></p><p>代码实现</p><pre class=" language-c++"><code class="language-c++">#include<iostream>using namespace std;int n;const int N=20;bool col[N],dg[N],udg[N];//保存行列对角线是否已经存在皇后char path[N][N];//储存合适的路径void DFS(int u){    if(n==u)    {        for(int i=0;i<n;i++) cout<<path[i]<<endl;//给一个char的首地址输出一行        cout<<endl;        return;    }        for(int i=0;i<n;i++)    {        if(!col[i]&&!dg[u+i]&&!udg[n-u+i])        {            path[u][i]='Q';            col[i]=dg[u+i]=udg[n-u+i]=true;            DFS(u+1);            col[i]=dg[u+i]=udg[n-u+i]=false;//回溯，要恢复现场。            path[u][i]='.';        }    }}int main(){    cin>>n;    for(int i=0;i<n;i++)        for(int q=0;q<n;q++)        {            path[i][q]='.';        }    DFS(0);    return 0;}</code></pre>]]></content>
       
       
       
