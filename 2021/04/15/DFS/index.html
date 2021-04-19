@@ -471,14 +471,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-17
+                    2021-04-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    203
+                    301
                 </div>
                 
 
@@ -528,39 +528,10 @@
 <p>1 2 3<br>1 3 2<br>2 1 3<br>2 3 1<br>3 1 2<br>3 2 1</p>
 </blockquote>
 <p>代码实现：</p>
-<pre class=" language-c++"><code class="language-c++">#include <iostream>
-using namespace std;
-const int N=100;//
-bool sti[N];//储存当前位置是否被用过了
-int path[N];//储存路径
-int n;//输入的个数
-void DFS(int u)
-{
-    if(u==n)//到达最后(也可以理解为树的叶节点)进行输出
-    {
-        for(int i=0;i<n;i++)  cout<<path[i]<<" ";
-        cout<<endl;
-        return;
-    }
-for(int i=1;i<=n;i++)
-{
-        if(!sti[i])//当前位置没用过进行下一步，如：1_ _,之后sti[1]为ture,直接操作下一个位置。
-        {
-            path[u]=i;
-            sti[i]=true;
-            DFS(u+1);
-            sti[i]=false;//递归回来要重新设置为false，防止回溯是数据错乱。
-        }
-}
-}
-    
-int main()
-{
-     cin>>n;
-     DFS(0);
-     return 0;
-}
-</code></pre>
+<blockquote>
+<p>#include <iostream><br>using namespace std;<br>const int N=100;//<br>bool sti[N];//储存当前位置是否被用过了<br>int path[N];//储存路径<br>int n;//输入的个数<br>void DFS(int u)<br>{<br>   if(u==n)//到达最后(也可以理解为树的叶节点)进行输出<br>   {<br>       for(int i=0;i&lt;n;i++)  cout&lt;&lt;path[i]&lt;&lt;” “;<br>       cout&lt;&lt;endl;<br>       return;<br>   }<br>for(int i=1;i&lt;=n;i++)<br>{<br>       if(!sti[i])//当前位置没用过进行下一步，如：1_ _,之后sti[1]为ture,直接操作下一个位置。<br>       {<br>           path[u]=i;<br>           sti[i]=true;<br>           DFS(u+1);<br>           sti[i]=false;//递归回来要重新设置为false，防止回溯是数据错乱。<br>       }<br>}<br>}</iostream></p>
+<p>int main()<br>{<br>    cin&gt;&gt;n;<br>    DFS(0);<br>    return 0;<br>}</p>
+</blockquote>
 <p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/awidhawi.jpg"></p>
 
                 
@@ -1294,7 +1265,7 @@ int main()
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">836</span>&nbsp;字
+                class="white-color">957</span>&nbsp;字
             
             
             
