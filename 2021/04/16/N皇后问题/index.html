@@ -529,9 +529,8 @@
          for(int i=0;i< n;i++) cout<< path[i]<< endl;  //给一个char的首地址输出一行
          cout<< endl;
          return;
-     }
-     
-   for(int i=0;i<n;i++)
+     }  
+  for(int i=0;i<n;i++)
      {
         if(!col[i]&&!dg[u+i]&&!udg[n-u+i])
          {
@@ -543,10 +542,9 @@
          }
      }
  }
- 
  int main()
  {
-     cin>>n;
+     cin>> n;
      for(int i=0;i< n;i++)
          for(int q=0;q< n;q++)
          {
