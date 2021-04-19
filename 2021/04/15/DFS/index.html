@@ -31,8 +31,8 @@
 
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="Sai@Wen" type="application/atom+xml">
-</head>
+<link rel="alternate" href="/atom.xml" title="Sai@Wen" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
@@ -478,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    282
+                    257
                 </div>
                 
 
@@ -528,7 +528,7 @@
 <p>1 2 3<br>1 3 2<br>2 1 3<br>2 3 1<br>3 1 2<br>3 2 1</p>
 </blockquote>
 <p>代码实现：</p>
-<pre class=" language-c++"><code class="language-c++">> \#include\<iostream\>
+<pre class=" language-c++"><code class="language-c++">> #include\< iostream \> 
 > using namespace std;
 > const int N=100;//
 > bool sti[N];//储存当前位置是否被用过了
@@ -539,7 +539,7 @@
 >    if(u==n)//到达最后(也可以理解为树的叶节点)进行输出
 >    {
 >        for(int i=0;i < n;i++)  cout<< path[i]<< " ";
->        cout<<endl;
+>        cout << endl;
 >        return;
 >    }
 > for(int i=1;i<=n;i++)
