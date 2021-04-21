@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-04-19T07:54:41.085Z</updated>
+  <updated>2021-04-21T17:50:17.074Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mathematica简单操作</title>
+    <link href="http://1144539618.github.io/2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
+    <id>http://1144539618.github.io/2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</id>
+    <published>2021-04-21T11:42:55.000Z</published>
+    <updated>2021-04-21T17:50:17.074Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;注：Mathematica要求命令的首个字母都为大写，空格可当作乘号&lt;br&gt;&lt;strong&gt;方程的建立与求解&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.Element[{x, y}, Reals]  ：</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Mathematica" scheme="http://1144539618.github.io/tags/Mathematica/"/>
+    
+  </entry>
   
   <entry>
     <title>N皇后问题</title>

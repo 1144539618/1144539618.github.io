@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Mathematica简单操作</title>
+      <link href="2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
+      <url>2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<p>注：Mathematica要求命令的首个字母都为大写，空格可当作乘号<br><strong>方程的建立与求解</strong></p><p>1.Element[{x, y}, Reals]  ： 声明x和y属于实数</p><p>2.FullSimplify[expr,assum] ：用假设进行化简.</p><p>3.Solve<a href="*%E9%9C%80%E8%A6%81%E6%A0%B9%E6%8D%AE%E5%BB%BA%E7%AB%8B%E6%96%B9%E7%A8%8B*">3 a − c == 0 &amp;&amp; b − 3 d == 0 &amp;&amp; 2 (b + c) == 0, {a, b, c}</a></p><p>(* 下列函数为解析函数的是*)//利用函数解析的条件进行判断<br>例如：<br>u[x_, y_] := 2 * (x − 1) * y; //定义函数别忘了”<em>“<br>v[x</em>, y_] := y ^2 − x ^2 + 2 * x;<br>ux =D[u[x, y], x] //进行赋值，可便于操作<br>uy =D[u[x, y], y]<br>vx =D[v[x, y], x]<br>vy =D[v[x, y], y]<br>ux − vy(<em>解析的条件</em>)<br>uy + vx<br>Simplify<a href="*%E8%A7%A3%E6%9E%90%E7%9A%84%E6%9D%A1%E4%BB%B6%EF%BC%8C%E6%A0%B9%E6%8D%AE%E9%9C%80%E8%A6%81%EF%BC%8C%E5%8C%96%E7%AE%80%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84*">%</a></p><p>N[Im[ Log[3 - 4 I]]] //使用N，对 3 - 4 i的虚部进行数值输出，使用用小数也会输出数值</p><p>FunctionExpand：对函数进行展开<br>Expand：展开表达式中的乘积和正整数幂<br>ComplexExpand：进行复展开<br><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/20210421200123.png"></p><p>(* 提取系数，利用系数相等.用命令更有广泛适应性，用人为设定也可以*)<br>Coefficient[uv2, x2]<br>Coefficient[uv2, y ^ 2]<br>Solve[Coefficient[uv1, x y] == 0 &amp;&amp;Coefficient[uv2, x2] ==  0 &amp;&amp;Coefficient[uv2, y^ 2] == 0,{a, b, c}]<br>(* 提取系数，利用系数相等解待定系数*)</p><p>Do[expr,n]<br>Do[expr,{i, max,min}]//将变量 i 从 1 递增到max，计算 expr，也可加步长<br>Do[expr,{i, max]}]将变量 i 从 1 递增到 max（步长为 1），计算 expr.</p><p>SumConvergence</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Mathematica </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>N皇后问题</title>
       <link href="2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/"/>
       <url>2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/</url>
