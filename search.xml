@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>🐖</title>
-      <link href="2021/04/23/%F0%9F%90%96/"/>
-      <url>2021/04/23/%F0%9F%90%96/</url>
+      <title>朴素Dijkstra</title>
+      <link href="2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/"/>
+      <url>2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/-76d94897fcc2a872.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<p>原题链接(<a href="https://www.acwing.com/problem/content/description/851/">https://www.acwing.com/problem/content/description/851/</a>)<br>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。</p><p>请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。</p><p><strong>输入格式</strong><br>第一行包含整数 n 和 m。</p><p>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p><p><strong>输出格式</strong><br>输出一个整数，表示 1 号点到 n 号点的最短距离。</p><p>如果路径不存在，则输出  −1 。</p><p><strong>数据范围</strong><br>1≤n≤500,<br>1≤m≤105,<br>图中涉及边长均不超过10000。</p><p><strong>输入样例：</strong></p><blockquote><p>3 3<br>1 2 2<br>2 3 1<br>1 3 4</p></blockquote><p><strong>输出样例：</strong></p><blockquote><p>3</p></blockquote><p>```c++<br>#include<iostream><br>#include<algorithm><br>#include<cstring><br>using namespace std;<br>const int N=510;<br> int g[N][N];<br> int dist[N];<br> bool st[N];<br>  int n ,m;</cstring></algorithm></iostream></p><p> int Dijkstra()<br> {<br>     memset (dist,0x3f,sizeof dist);<br>     dist[1]=0;<br>     for(int i=0;i&lt;n;i++)<br>     {<br>         int t=-1;<br>         for(int j=1;j&lt;=n;j++)<br>         {<br>             if(!st[j]&amp;&amp;(t==-1||dist[t]&gt;dist[j]))<br>             {<br>                 t=j;<br>             }<br>         }<br>        st[t]=true;<br>        for(int j=1;j&lt;=n;j++)<br>        {<br>            dist[j]=min(dist[j],dist[t]+g[t][j]);<br>        }</p><pre><code> } if(dist[n]==0x3f3f3f3f) return -1; return dist[n];</code></pre><p> }</p><p> int main()<br> {<br>     cin&gt;&gt;n&gt;&gt;m;<br>      memset(g,0x3f,sizeof g);<br>      while(m–)<br>      {<br>          int x,y,z;<br>          cin&gt;&gt;x&gt;&gt;y&gt;&gt;z;<br>          g[x][y]=min(g[x][y],z);</p><pre><code>  }    cout&lt;&lt;Dijkstra()&lt;&lt;endl;  return 0;</code></pre><p> }```</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Dijkstra </tag>
+            
+        </tags>
       
     </entry>
     
