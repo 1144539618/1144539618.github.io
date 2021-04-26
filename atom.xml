@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-04-26T14:02:31.433Z</updated>
+  <updated>2021-04-26T14:05:46.549Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="http://1144539618.github.io/2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/"/>
     <id>http://1144539618.github.io/2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/</id>
     <published>2021-04-26T13:58:06.000Z</published>
-    <updated>2021-04-26T14:02:31.433Z</updated>
+    <updated>2021-04-26T14:05:46.549Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;原题链接(&lt;a</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/description/851/&quot;&gt;原题链接&lt;/a&gt;&lt;br&gt;给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。&lt;/p&gt;
+&lt;p&gt;请你求出 1 号点到</summary>
         
       
     
