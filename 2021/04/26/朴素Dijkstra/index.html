@@ -478,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    344
+                    354
                 </div>
                 
 
@@ -520,7 +520,7 @@
 <blockquote>
 <p>3</p>
 </blockquote>
-<p>```c++<br>#include<iostream><br>#include<algorithm><br>#include<cstring><br>using namespace std;<br>const int N=510;<br> int g[N][N];<br> int dist[N];<br> bool st[N];<br>  int n ,m;</cstring></algorithm></iostream></p>
+<p>```c++<br>#include&lt; iostream &gt;<br>#include&lt; algorithm &gt;<br>#include&lt; cstring &gt;<br>using namespace std;<br>const int N=510;<br> int g[N][N];<br> int dist[N];<br> bool st[N];<br>  int n ,m;</p>
 <p> int Dijkstra()<br> {<br>     memset (dist,0x3f,sizeof dist);<br>     dist[1]=0;<br>     for(int i=0;i&lt;n;i++)<br>     {<br>         int t=-1;<br>         for(int j=1;j&lt;=n;j++)<br>         {<br>             if(!st[j]&amp;&amp;(t==-1||dist[t]&gt;dist[j]))<br>             {<br>                 t=j;<br>             }<br>         }<br>        st[t]=true;<br>        for(int j=1;j&lt;=n;j++)<br>        {<br>            dist[j]=min(dist[j],dist[t]+g[t][j]);<br>        }</p>
 <pre><code> }
  if(dist[n]==0x3f3f3f3f) return -1;
