@@ -471,14 +471,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-26
+                    2021-04-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    286
+                    367
                 </div>
                 
 
@@ -511,7 +511,7 @@
 <p>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
 <p><strong>输出格式</strong><br>输出一个整数，表示 1 号点到 n 号点的最短距离。</p>
 <p>如果路径不存在，则输出  −1 。</p>
-<p><strong>数据范围</strong><br>1≤n≤500,<br>1≤m≤105,<br>图中涉及边长均不超过10000。</p>
+<p><strong>数据范围</strong><br>1≤n≤500<br>1≤m≤105<br>图中涉及边长均不超过10000。</p>
 <p><strong>输入样例：</strong></p>
 <blockquote>
 <p>3 3<br>1 2 2<br>2 3 1<br>1 3 4</p>
@@ -525,52 +525,57 @@
  #include< cstring >
  using namespace std;
  const int N=510;
- int g[N][N];
- int dist[N];
- bool st[N];
+ int g[N][N]; //邻接矩阵，储存边到边的距离
+ int dist[N]; // 源到各个点的距离
+ bool st[N]; // 储存是否确定最短距离
   int n ,m;
  
  int Dijkstra()
  {
      memset (dist,0x3f,sizeof dist);
-     dist[1]=0;
+     dist[1]=0;  // 第一个到第一个元素距离为0
      for( int i=0;i < n;i++ )
      {
          int t=-1;
-         for(int j=1;j <= n;j++)
+         for(int j=1;j <= n;j++)  // 找目前距离最小得点
          {
-             if(!st[j]&&(t==-1||dist[t] > dist[j]))
+             if(!st[j]&&(t==-1||dist[t] > dist[j])) // 当前的点没有确定最短路径且为最小值
              { 
                  t=j;
              }
          }
-        st[t]=true;
+        st[t]=true;  // 已确定最短路径
+
         for(int j=1;j<=n;j++)
         {
-            dist[j]=min(dist[j],dist[t]+g[t][j]);
+            dist[j]=min(dist[j],dist[t]+g[t][j]); // 比较并更新最短距离
         }
          
      }
-     if(dist[n]==0x3f3f3f3f) return -1;
+     if(dist[n]==0x3f3f3f3f) return -1; //还为无穷就返回-1
      return dist[n];
  }
   
  int main()
  {
-     cin>>n>>m;
-      memset(g,0x3f,sizeof g);
+      cin>>n>>m;
+
+      memset(g,0x3f,sizeof g); // 初始化为无穷
+
       while(m--)
       {
           int x,y,z;
           cin>>x>>y>>z;
-          g[x][y]=min(g[x][y],z);
+          g[x][y]=min(g[x][y],z);  // 可能会有重边，取最小值
           
       }
       
       cout << Dijkstra() << endl;
+
       return 0;
  }
 </code></pre>
+<p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/jdw.jpg"></p>
 
                 
             </div>
