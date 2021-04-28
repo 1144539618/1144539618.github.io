@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-04-26T15:09:18.807Z</updated>
+  <updated>2021-04-28T11:07:54.295Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STL</title>
+    <link href="http://1144539618.github.io/2021/04/28/STL/"/>
+    <id>http://1144539618.github.io/2021/04/28/STL/</id>
+    <published>2021-04-28T09:57:42.000Z</published>
+    <updated>2021-04-28T11:07:54.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;erase：&quot;&gt;&lt;a href=&quot;#erase：&quot; class=&quot;headerlink&quot; title=&quot;erase：&quot;&gt;&lt;/a&gt;erase：&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;（1）erase(pos,n);</summary>
+        
+      
+    
+    
+    
+    
+    <category term="stl" scheme="http://1144539618.github.io/tags/stl/"/>
+    
+  </entry>
   
   <entry>
     <title>🐖</title>
