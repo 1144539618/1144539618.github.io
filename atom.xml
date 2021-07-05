@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-05-30T11:26:23.221Z</updated>
+  <updated>2021-07-05T17:00:47.580Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSP暑假实训</title>
+    <link href="http://1144539618.github.io/2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/"/>
+    <id>http://1144539618.github.io/2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/</id>
+    <published>2021-07-05T16:59:16.000Z</published>
+    <updated>2021-07-05T17:00:47.580Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>公式记忆</title>
@@ -87,30 +108,6 @@
     
     
     <category term="Dijkstra" scheme="http://1144539618.github.io/tags/Dijkstra/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mathematica小班课</title>
-    <link href="http://1144539618.github.io/2021/04/23/Mathematica%E5%B0%8F%E7%8F%AD%E8%AF%BE/"/>
-    <id>http://1144539618.github.io/2021/04/23/Mathematica%E5%B0%8F%E7%8F%AD%E8%AF%BE/</id>
-    <published>2021-04-23T08:04:44.000Z</published>
-    <updated>2021-04-23T09:18:43.958Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;要适当拆分&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Mathematica" scheme="http://1144539618.github.io/tags/Mathematica/"/>
     
   </entry>
   
