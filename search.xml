@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Excel学习</title>
+      <link href="2021/07/25/Excel%E5%AD%A6%E4%B9%A0/"/>
+      <url>2021/07/25/Excel%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<p><em><strong>1.Excel最大计算精度是15位,第一种是将格式设置成文本，第二种是在输入前先输入’号开头</strong></em></p><p><em><strong>2.ctrl+Enter     快速填充<br>         ctrl+A             全部选中<br>         ctrl+方向键     快速向下或…<br>         双击边框</strong></em></p><p><em><strong>3.自定义排序：选项-&gt;高级-&gt;编辑自定义列表-&gt;导入</strong></em></p><p>**<em>4.</em> 表示任意个字符<br>         ? 表示任意单个字符    </p><p><em><strong>5.高级筛选：自定义筛选区域+条件进行筛选</strong></em></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSP暑假实训</title>
       <link href="2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/"/>
       <url>2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/</url>

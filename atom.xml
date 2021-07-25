@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-07-06T02:03:41.098Z</updated>
+  <updated>2021-07-25T02:42:25.423Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Excel学习</title>
+    <link href="http://1144539618.github.io/2021/07/25/Excel%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://1144539618.github.io/2021/07/25/Excel%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-07-25T02:24:18.000Z</published>
+    <updated>2021-07-25T02:42:25.423Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;1.Excel最大计算精度是15位,第一种是将格式设置成文本，第二种是在输入前先输入’号开头&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2.ctrl+Enter     快速填充&lt;br&gt;         ctrl+A    </summary>
+        
+      
+    
+    
+    
+    
+    <category term="Excel" scheme="http://1144539618.github.io/tags/Excel/"/>
+    
+  </entry>
   
   <entry>
     <title>CSP暑假实训</title>
