@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Excel学习, Sai@Wen">
+    <meta name="keywords" content="Excel学习笔记, Sai@Wen">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Excel学习 | Sai@Wen</title>
+    <title>Excel学习笔记 | Sai@Wen</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sai@Wen" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Sai@Wen" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -327,12 +327,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Excel学习</h1>
+                    <h1 class="description center-align post-title">Excel学习笔记</h1>
                 </div>
             </div>
         </div>
@@ -471,21 +471,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-08
+                    2021-09-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -633,6 +633,105 @@
 </tbody></table>
 </li>
 </ul>
+</li>
+</ul>
+<h1 id="数据统计-高级函数套用技术应用"><a href="#数据统计-高级函数套用技术应用" class="headerlink" title="数据统计-高级函数套用技术应用"></a>数据统计-高级函数套用技术应用</h1><h2 id="Excel-四则运算："><a href="#Excel-四则运算：" class="headerlink" title="Excel 四则运算："></a>Excel 四则运算：</h2><ul>
+<li>除了<strong>不等于</strong>表示为：**&lt;&gt;**,其他跟c++一样</li>
+</ul>
+<h2 id="Excel-单元格行列混合引用"><a href="#Excel-单元格行列混合引用" class="headerlink" title="Excel 单元格行列混合引用"></a>Excel 单元格行列混合引用</h2><ul>
+<li><table>
+<thead>
+<tr>
+<th>相对引用和绝对引用：按F4切换引用方式。</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>相对引用:</td>
+<td>A1</td>
+<td>复制、粘贴公式时行、列都变化</td>
+</tr>
+<tr>
+<td>绝对引用:</td>
+<td>$A$1</td>
+<td>复制、粘贴公式时行、列都不变化</td>
+</tr>
+<tr>
+<td>行绝对引用:</td>
+<td>A$1</td>
+<td>复制、粘贴公式时行不变化，列变化</td>
+</tr>
+<tr>
+<td>列绝对引用:</td>
+<td>$A1</td>
+<td>复制、粘贴公式时行变化，列不变化</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p><code>Tab:函数确认输入</code></p>
+<p><code>数字类型是靠单元格右边的</code></p>
+<h2 id="常见函数应用"><a href="#常见函数应用" class="headerlink" title="常见函数应用"></a>常见函数应用</h2><ul>
+<li><table>
+<thead>
+<tr>
+<th align="left">最大值 MAX()</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">最小值 MIN()</td>
+</tr>
+<tr>
+<td align="left">第N大值  LARGE(区域或数组，N)</td>
+</tr>
+<tr>
+<td align="left">第N小值  SMALL(区域或数组，N)</td>
+</tr>
+<tr>
+<td align="left">平均值  AVERAGE(数据范围)</td>
+</tr>
+<tr>
+<td align="left">排名 RANK(数字，查找区域，0：降序|1：升序)</td>
+</tr>
+</tbody></table>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>常见应用函数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>COUNT: 返回数字个数</td>
+</tr>
+<tr>
+<td>COUNTA: 返回非空单元格个数</td>
+</tr>
+<tr>
+<td>COUNTBLANK: 返回空单元格个数</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p><code>空格可以表示区域交叉的单元格</code></p>
+<ul>
+<li><table>
+<thead>
+<tr>
+<th>求和函数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SUM: 返回指定区域的和</td>
+</tr>
+<tr>
+<td>PRODUCT :返回指定区域相乘结果</td>
+</tr>
+<tr>
+<td>SUMPRODUCT : 返回选定区域相乘之后和的结果</td>
+</tr>
+</tbody></table>
 </li>
 </ul>
 
@@ -1147,9 +1246,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Excel学习">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Excel学习笔记">
                         
-                        <span class="card-title">Excel学习</span>
+                        <span class="card-title">Excel学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1361,7 +1460,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.4k</span>&nbsp;字
+                class="white-color">3.7k</span>&nbsp;字
             
             
             
