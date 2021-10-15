@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-09-26T02:47:00.651Z</updated>
+  <updated>2021-10-15T10:24:03.926Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://1144539618.github.io/2021/10/15/BFS/"/>
+    <id>http://1144539618.github.io/2021/10/15/BFS/</id>
+    <published>2021-10-15T10:23:25.638Z</published>
+    <updated>2021-10-15T10:24:03.926Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot; language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+#include &lt;queue&gt;
+
+using</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>汪大佬第一次编程感言</title>
