@@ -6,7 +6,7 @@
   <link href="http://1144539618.github.io/atom.xml" rel="self"/>
   
   <link href="http://1144539618.github.io/"/>
-  <updated>2021-10-15T10:30:06.204Z</updated>
+  <updated>2021-10-15T10:31:31.742Z</updated>
   <id>http://1144539618.github.io/</id>
   
   <author>
@@ -21,17 +21,19 @@
     <link href="http://1144539618.github.io/2021/10/15/BFS/"/>
     <id>http://1144539618.github.io/2021/10/15/BFS/</id>
     <published>2021-10-15T10:27:08.000Z</published>
-    <updated>2021-10-15T10:30:06.204Z</updated>
+    <updated>2021-10-15T10:31:31.742Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot; language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;#include \&lt; iostream \&gt;
-#include \&lt; cstring \&gt;
-#include \&lt; algorithm \&gt;
-#include \&lt;</summary>
+    <summary type="html">&lt;pre class=&quot; language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;algorithm&gt;
+#include&lt;queue&gt;
+
+using</summary>
         
       
     
