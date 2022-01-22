@@ -4,11 +4,37 @@
   
     
     <entry>
-      <title>BFS</title>
-      <link href="2021/10/15/BFS/"/>
-      <url>2021/10/15/BFS/</url>
+      <title>数模学习</title>
+      <link href="2022/01/22/%E6%95%B0%E6%A8%A1%E5%AD%A6%E4%B9%A0/"/>
+      <url>2022/01/22/%E6%95%B0%E6%A8%A1%E5%AD%A6%E4%B9%A0/</url>
       
-        <content type="html"><![CDATA[<pre class=" language-c++"><code class="language-c++"># include < iostream ># include < cstring ># include < algorithm ># include < queue >using namespace std;typedef pair<int, int> PII;const int N = 110;int g[N][N],d[N][N];int n,m;queue<PII> q;int BFS(){    memset(d,-1,sizeof d);    q.push({0,0});    d[0][0]=0;    int dx[4] = {-1, 0, 1, 0}, dy[4] = {0, 1, 0, -1};        while(q.size())    {        auto t=q.front();        q.pop();                for (int i = 0; i < 4; i ++ )        {             int x = t.first + dx[i], y = t.second + dy[i];                          if(x>=0 && y>=0  &&  x<n  &&  y<m  &&  d[x][y]==-1 and g[x][y]==0)             {                d[x][y]=d[t.first][t.second]+1;                q.push({x,y});             }        }    }        return d[n-1][m-1];}int main(){    cin>>n>>m;            for (int i = 0; i < n; i ++ )        for (int j = 0; j < m; j ++ )            cin>>g[i][j];                cout<<BFS()<<endl;    return 0;}</code></pre>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab学习</title>
+      <link href="2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/"/>
+      <url>2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Django</title>
+      <link href="2021/10/30/Django/"/>
+      <url>2021/10/30/Django/</url>
+      
+        <content type="html"><![CDATA[<ul><li><strong>python3 manage.py createsuperuser</strong>: 创建管理员账号</li><li></li></ul>]]></content>
       
       
       
@@ -36,70 +62,6 @@
     
     
     <entry>
-      <title>CSP暑假实训</title>
-      <link href="2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/"/>
-      <url>2021/07/06/CSP%E6%9A%91%E5%81%87%E5%AE%9E%E8%AE%AD/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/lengender-12/p/6667934.html">进制转换</a><br><a href="https://www.cnblogs.com/wkfvawl/p/9053011.html">字符串反转</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>公式记忆</title>
-      <link href="2021/05/22/%E5%85%AC%E5%BC%8F%E8%AE%B0%E5%BF%86/"/>
-      <url>2021/05/22/%E5%85%AC%E5%BC%8F%E8%AE%B0%E5%BF%86/</url>
-      
-        <content type="html"><![CDATA[<ul><li>a^3+b^3=(a+b)(a^2-ab+b^2)</li><li>a^3-b^3=(a-b)(a^2+ab+b^2)</li><li>(a+b)^3=a^3+b^3+3a^2b+3ab^2</li></ul><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/w.png"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>STL</title>
-      <link href="2021/04/28/STL/"/>
-      <url>2021/04/28/STL/</url>
-      
-        <content type="html"><![CDATA[<h1 id="erase："><a href="#erase：" class="headerlink" title="erase："></a>erase：</h1><blockquote><p>（1）erase(pos,n); 删除从pos开始的n个字符，比如erase(0,1)就是删除第一个字符</p></blockquote><blockquote><p>（2）erase(position);删除position处的一个字符(position是个string类型的迭代器)</p></blockquote><blockquote><p>（3）erase(first,last);删除从first到last之间的字符（first和last都是迭代器）</p></blockquote><h1 id="priority-queue"><a href="#priority-queue" class="headerlink" title="priority_queue"></a>priority_queue</h1><blockquote><p>模板类有三个模板参数：元素类型，容器类型，比较算子。</p><blockquote><p>priority_queue<int> q1;<br>priority_queue&lt;pair&lt;int,int&gt;&gt; q2;<br>priority_queue&lt;int,vector<int>,greater<int>&gt; q3;//定义优先级小的先出队<br>如果要自己定义比较算子，可以有多种方法，最常见的就是重载比较运算符，注意重载操作返回的结果是bool类型.<br>&lt;作为比较操作: 来确定优先级关系，此处表明优先级关系为按值从小到大排列，值大的优先级高，而优先级高的放在队列前面<br>&gt;操作符确定优先级关系时，表明优先级是按值从大到小排列，值小的优先级高，优先级高的放在队列前面。</int></int></int></p></blockquote></blockquote><p><img src="https://tse1-mm.cn.bing.net/th/id/R-C.1e7fff4607875262b8e00a91b374c22a?rik=C+fTAbDnfJUIlw&amp;riu=http://i4.qhimg.com/dr/270_500_/t0139bbfd8fe6889994.jpg&amp;ehk=y37BjGLwc0U7jKELjm+gxvitsLhieaMTiIFtuqnswXQ=&amp;risl=&amp;pid=ImgRaw&amp;r=0"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> stl </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>朴素Dijkstra</title>
-      <link href="2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/"/>
-      <url>2021/04/26/%E6%9C%B4%E7%B4%A0Dijkstra/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://www.acwing.com/problem/content/description/851/">原题链接</a><br>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。</p><p>请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。</p><p><strong>输入格式</strong><br>第一行包含整数 n 和 m。</p><p>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p><p><strong>输出格式</strong><br>输出一个整数，表示 1 号点到 n 号点的最短距离。</p><p>如果路径不存在，则输出  −1 。</p><p><strong>数据范围</strong><br>1≤n≤500<br>1≤m≤105<br>图中涉及边长均不超过10000。</p><p><strong>输入样例：</strong></p><blockquote><p>3 3<br>1 2 2<br>2 3 1<br>1 3 4</p></blockquote><p><strong>输出样例：</strong></p><blockquote><p>3</p></blockquote><pre class=" language-c++"><code class="language-c++"> #include< iostream > #include< algorithm > #include< cstring > using namespace std; const int N=510; int g[N][N]; //邻接矩阵，储存边到边的距离 int dist[N]; // 源到各个点的距离 bool st[N]; // 储存是否确定最短距离  int n ,m;  int Dijkstra() {     memset (dist,0x3f,sizeof dist);     dist[1]=0;  // 第一个到第一个元素距离为0     for( int i=0;i < n;i++ )     {         int t=-1;         for(int j=1;j <= n;j++)  // 找目前距离最小得点         {             if(!st[j]&&(t==-1||dist[t] > dist[j])) // 当前的点没有确定最短路径且为最小值             {                  t=j;             }         }        st[t]=true;  // 已确定最短路径        for(int j=1;j<=n;j++)        {            dist[j]=min(dist[j],dist[t]+g[t][j]); // 比较并更新最短距离        }              }     if(dist[n]==0x3f3f3f3f) return -1; //还为无穷就返回-1     return dist[n]; }   int main() {      cin>>n>>m;      memset(g,0x3f,sizeof g); // 初始化为无穷      while(m--)      {          int x,y,z;          cin>>x>>y>>z;          g[x][y]=min(g[x][y],z);  // 可能会有重边，取最小值                }            cout << Dijkstra() << endl;      return 0; }</code></pre><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/jdw.jpg"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Dijkstra </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Mathematica简单操作</title>
       <link href="2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
       <url>2021/04/21/Mathematica%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</url>
@@ -111,63 +73,6 @@
         <tags>
             
             <tag> Mathematica </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>N皇后问题</title>
-      <link href="2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/"/>
-      <url>2021/04/16/N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><strong>废话不多说先上<a href="https://www.acwing.com/problem/content/description/845/">链接</a><br>n−皇后问题是指将 n 个皇后放在 n×n 的国际象棋棋盘上，使得皇后不能相互攻击<br>到，即任意两个皇后都不能处于同一行、同一列或同一斜线上。</strong></p><p>现在给定整数 n，请你输出所有的满足条件的棋子摆法。</p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>共一行，包含整数 n。</p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>每个解决方案占 n 行，每行输出一个长度为 n 的字符串，用来表示完整的棋盘状态。</p><p>其中 . 表示某一个位置的方格状态为空，Q 表示某一个位置的方格上摆着皇后。</p><p>每个方案输出完成后，输出一个空行。</p><p>注意：行末不能有多余空格。</p><p>输出方案的顺序任意，只要不重复且没有遗漏即可。</p><h1 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h1><p>1≤n≤9</p><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/20210416213615.png"></p><h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><pre class=" language-c++"><code class="language-c++"> #include< iostream> using namespace std;  int n; const int N=20; bool col[N],dg[N],udg[N]; //保存行列对角线是否已经存在皇后 char path[N][N]; //储存合适的路径  void DFS(int u) {     if(n==u)     {         for(int i=0;i< n;i++) cout< < path[i]< < endl;  //给一个char的首地址输出一行         cout< < endl;         return;     }    for(int i = 0; i < n ;i++ )     {        if(!col[i]&&!dg[u+i]&&!udg[n-u+i])         {             path[u][i]='Q';             col[i]=dg[u+i]=udg[n-u+i]=true;            DFS(u+1);             col[i]=dg[u+i]=udg[n-u+i]=false;  //回溯，要恢复现场。             path[u][i]='.';         }     } } int main() {     cin> > n;     for(int i = 0 ;i< n ; i++)         for(int q = 0 ;q < n ; q++)         {             path[i][q]='.';        }    DFS(0);    return 0;}</code></pre>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> DFS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>DFS</title>
-      <link href="2021/04/15/DFS/"/>
-      <url>2021/04/15/DFS/</url>
-      
-        <content type="html"><![CDATA[<p>这是<a href="https://www.acwing.com/problem/content/844/">AcWing</a>上的基础的DFS的一道题。</p><p>这里放上一些别的<a href="https://vjudge.net/contest/65959">DFS的题</a></p><p>问题描述</p><blockquote><p>给定一个整数 n，将数字 1∼n 排成一排，将会有很多种排列方法。<br>现在，请你按照字典序将所有的排列方法输出。</p></blockquote><p>输入格式</p><blockquote><p>共一行，包含一个整数 n。</p></blockquote><p>输出格式</p><blockquote><p>按字典序输出所有排列方案，每个方案占一行。</p></blockquote><p>输入样例：</p><blockquote><p>3</p></blockquote><p>输出样例：</p><blockquote><p>1 2 3<br>1 3 2<br>2 1 3<br>2 3 1<br>3 1 2<br>3 2 1</p></blockquote><p>代码实现：</p><pre class=" language-c++"><code class="language-c++"> #include < iostream >  using namespace std; const int N=100;// bool sti[N];//储存当前位置是否被用过了 int path[N];//储存路径 int n;//输入的个数 void DFS(int u) {    if(u==n)//到达最后(也可以理解为树的叶节点)进行输出    {        for(int i=0;i < n;i++)  cout<< path[i]<< " ";        cout << endl;        return;    } for(int i=1;i<=n;i++) {        if(!sti[i])//当前位置没用过进行下一步，如：1_ _,之后sti[1]为ture,直接操作下一个位置。        {            path[u]=i;            sti[i]=true;            DFS(u+1);            sti[i]=false;//递归回来要重新设置为false，防止回溯是数据错乱。        } } }      int main() {     cin>>n;     DFS(0);     return 0; }</code></pre><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/awidhawi.jpg"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> DFS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>单链表逆置</title>
-      <link href="2021/04/14/%E5%8D%95%E9%93%BE%E8%A1%A8%E9%80%86%E7%BD%AE/"/>
-      <url>2021/04/14/%E5%8D%95%E9%93%BE%E8%A1%A8%E9%80%86%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>给你单链表的头指针 head 和两个整数&nbsp;left 和 right ，其中&nbsp;left &lt;= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。</p><p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/reverse-linked-list-ii">https://leetcode-cn.com/problems/reverse-linked-list-ii</a><br>===========<br><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/rev2ex2.jpg"></p><p>示例1：</p><blockquote><p>输入：head = [1,2,3,4,5], left = 2, right = 4<br>输出：[1,4,3,2,5]</p></blockquote><p>示例2：</p><blockquote><p>输入：head = [5], left = 1, right = 1<br>输出：[5]</p></blockquote><p>提示：</p><blockquote><ul><li>链表中节点数目为 n</li><li>1 &lt;= n &lt;= 500</li><li>-500 &lt;= Node.val &lt;= 500</li><li>1 &lt;= left &lt;= right &lt;= n</li></ul></blockquote><p>代码实现：</p><blockquote><p>class Solution {<br>public:<br>ListNode* reverseBetween(ListNode* head, int left, int right) {</p><p>ListNode* prev=new ListNode(-1);prev-&gt;next=head;//增加空头结点，简化操作，我们用的课本也是加了空头结点的。<br>auto a=prev;<br>for(int i=0;i&lt;left-1;i++) a=a-&gt;next;<br>auto b=a-&gt;next,c=b-&gt;next;//c保留剩下的链表，b为要操作的目前结点<br>for(int i=0;i&lt;right-left;i++)<br>   {<br>auto d=c-&gt;next;<br>c-&gt;next=b;<br>b=c;//每次逆转之后b，c都向后移动一个结点<br>c=d;<br>   }<br>a-&gt;next-&gt;next=c;//将整个链表重新连起来<br>a-&gt;next=b;<br>return prev-&gt;next;//注意空头结点<br>  }<br>};</p></blockquote><p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/lallaawd.jpg"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 链表 </tag>
             
         </tags>
       
@@ -189,38 +94,6 @@
             <tag> Markdown </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>通信中的数学基础篇之复变函数</title>
-      <link href="2021/04/13/%E9%80%9A%E4%BF%A1%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AF%87%E4%B9%8B%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
-      <url>2021/04/13/%E9%80%9A%E4%BF%A1%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AF%87%E4%B9%8B%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://und-picture-bed.oss-cn-beijing.aliyuncs.com/img/awd.jpg"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 复变函数 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="2021/04/10/hello-world/"/>
-      <url>2021/04/10/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
