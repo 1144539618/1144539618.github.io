@@ -34,11 +34,21 @@
     <link href="http://1144539618.github.io/2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/"/>
     <id>http://1144539618.github.io/2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/</id>
     <published>2022-01-22T01:37:16.000Z</published>
-    <updated>2022-01-22T01:37:16.496Z</updated>
+    <updated>2022-01-22T02:31:00.050Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;取整函数&quot;&gt;&lt;a href=&quot;#取整函数&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
     
+    <category term="Matlab" scheme="http://1144539618.github.io/tags/Matlab/"/>
     
   </entry>
   
@@ -84,6 +94,30 @@
     
     
     <category term="Excel" scheme="http://1144539618.github.io/tags/Excel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STL</title>
+    <link href="http://1144539618.github.io/2021/04/28/STL/"/>
+    <id>http://1144539618.github.io/2021/04/28/STL/</id>
+    <published>2021-04-28T09:57:42.000Z</published>
+    <updated>2022-01-22T01:47:51.555Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;erase：&quot;&gt;&lt;a href=&quot;#erase：&quot; class=&quot;headerlink&quot; title=&quot;erase：&quot;&gt;&lt;/a&gt;erase：&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;（1）erase(pos,n);</summary>
+        
+      
+    
+    
+    
+    
+    <category term="stl" scheme="http://1144539618.github.io/tags/stl/"/>
     
   </entry>
   

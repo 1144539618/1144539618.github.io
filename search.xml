@@ -21,9 +21,15 @@
       <link href="2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/"/>
       <url>2022/01/22/Matlab%E5%AD%A6%E4%B9%A0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="取整函数"><a href="#取整函数" class="headerlink" title="取整函数"></a>取整函数</h2><blockquote><p>floor（x）：向下取整</p><p>ceil（x）：向上取整</p><p>round（x）：四舍五入</p><p>fix（x）：舍去小数部分</p></blockquote><h2 id="离散数学函数"><a href="#离散数学函数" class="headerlink" title="离散数学函数"></a>离散数学函数</h2><blockquote><blockquote><p>factor(x):  对x因式分解（到最简）</p><p>factorial(x): 计算x！</p><p>nchoosek(n,k) :求n选k个的组合数</p></blockquote><blockquote><p>gcd(x,y): 求x，y的最大公约数</p><p>lcm(x,y) ：求x,y的最小公倍数</p></blockquote><blockquote><p>primes(x): 找出<strong>小于</strong>x的素数</p><p>isprime(x): 判断x是不是素数</p><p>rats(x) : 用分数表示X</p></blockquote></blockquote>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Matlab </tag>
+            
+        </tags>
       
     </entry>
     
@@ -54,6 +60,25 @@
         <tags>
             
             <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>STL</title>
+      <link href="2021/04/28/STL/"/>
+      <url>2021/04/28/STL/</url>
+      
+        <content type="html"><![CDATA[<h1 id="erase："><a href="#erase：" class="headerlink" title="erase："></a>erase：</h1><blockquote><p>（1）erase(pos,n); 删除从pos开始的n个字符，比如erase(0,1)就是删除第一个字符</p></blockquote><blockquote><p>（2）erase(position);删除position处的一个字符(position是个string类型的迭代器)</p></blockquote><blockquote><p>（3）erase(first,last);删除从first到last之间的字符（first和last都是迭代器）</p></blockquote><h1 id="priority-queue"><a href="#priority-queue" class="headerlink" title="priority_queue"></a>priority_queue</h1><blockquote><p>模板类有三个模板参数：元素类型，容器类型，比较算子。</p><blockquote><p>priority_queue<int> q1;<br>priority_queue&lt;pair&lt;int,int&gt;&gt; q2;<br>priority_queue&lt;int,vector<int>,greater<int>&gt; q3;//定义优先级小的先出队<br>如果要自己定义比较算子，可以有多种方法，最常见的就是重载比较运算符，注意重载操作返回的结果是bool类型.<br>&lt;作为比较操作: 来确定优先级关系，此处表明优先级关系为按值从小到大排列，值大的优先级高，而优先级高的放在队列前面<br>&gt;操作符确定优先级关系时，表明优先级是按值从大到小排列，值小的优先级高，优先级高的放在队列前面。</int></int></int></p></blockquote></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> stl </tag>
             
         </tags>
       
